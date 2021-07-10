@@ -20,7 +20,7 @@ func Deduplicate(input []string) []string {
 // New returns a Set containing the values provided in the arguments.
 func New(initial ...string) Set {
 	s := Set{}
-	hm, err := hybrid.New(hybrid.DefaultHybridOptions)
+	hm, err := hybrid.New(hybrid.DefaultDiskOptions)
 	if err != nil {
 		log.Fatal(err)
 	}
